@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html lang = 'en'>
 <head>
+    <meta name="viewport" content="initial-scale=1">
+    <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/css?family=Raleway:800" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:700" rel="stylesheet">
+    <link href="css/menu.css" rel="stylesheet">
     <link href="css/homepage.css" rel = "stylesheet">
+
     <title>Help with the Opiod Crisis</title>
 </head>
 <body>
+
+
+
     <div class="BodyContainer">
         <div class="firstLine">Opiod Addiction</div>
         <div class="secondLine">Is SERIOUS</div>
-            <div class="menu"> this is going to hopefully start 
-                                going down the page and create a little area for my menuing
-            </div>
+
         <div class="pic1"><img src="pic/opic1.png" class="re"></div> 
             <div class="write1">Contrary to popular belief, Lorem Ipsum is not simply random text. 
             It has roots in a piece of classical Latin literature from 45 BC, making it over 
@@ -45,6 +50,7 @@
         <div class="pic2"><img src="pic/opic1.png" class="re"></div>
 
         <div class="pic3"><img src="pic/opic1.png" class="re"></div> 
+
             <div class="write3">Contrary to popular belief, Lorem Ipsum is not simply random text. 
             It has roots in a piece of classical Latin literature from 45 BC, making it over 
             2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in 
@@ -59,9 +65,27 @@
             Bonorum et Malorum" by Cicero are also reproduced in their exact original form, 
             accompanied by English versions from the 1914 translation by H. Rackham.
             </div>
+
+            <div class="nav">
+                <a href="#">About</a>
+                <a href="#">Help</a>
+                <a href="#">Location</a>
+                <a href="#">Contact</a>
+            </div>
+
+           <div class="dropdown">
+                <button onclick="dropdownFunction()" class="navBtn">Navigation</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+
+
     </div>
 
 
-
+<script src="scripts/dropdownScript.js"></script>
 </body>
 </html>
