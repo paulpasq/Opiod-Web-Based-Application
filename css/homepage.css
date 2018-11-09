@@ -1,0 +1,70 @@
+.BodyContainer{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas:
+    "m o1 o1 o1 o1 o1"
+    "m o2 o2 o2 o2 o2" 
+    "m p1 p1 w1 w1 w1"
+    "m p1 p1 w1 w1 w1"
+    "m w2 w2 w2 p2 p2"
+    "m w2 w2 w2 p2 p2"
+    "m p3 p3 w3 w3 w3"
+    "m p3 p3 w3 w3 w3";
+    grid-gap: 4px;
+}
+
+
+
+.firstLine{
+    grid-area: o1;
+    font-size:75px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    color: blue;
+
+}
+
+.secondLine{
+    grid-area: o2;
+    font-size: 90px;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+    color: red;
+
+}
+
+.menu{
+    grid-area: m;
+    color: orangered;
+    background-color: aquamarine;
+}
+
+.pic1{
+    grid-area: p1;
+}
+
+.write1{
+    grid-area: w1;
+}
+
+.write2{
+    grid-area: w2;
+}
+
+.pic2{
+    grid-area: p2;
+}
+
+.write3{
+    grid-area: w3;
+}
+
+.pic3{
+    grid-area: p3;
+}
+
+.re{
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
