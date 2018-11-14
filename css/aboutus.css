@@ -30,3 +30,40 @@
     color:blue;
 }
 
+@media screen and (max-width: 768px)
+{
+    .bodyContainer{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "h1 h1 h1 h1 "
+        "w1 w1 w1 w1"
+        ". . . ."
+        ". . . ."
+        "w2 w2 w2 w2"
+        "w3 w3 w3 w3";
+        grid-gap: 5px;
+    
+    }    
+    .head{
+        grid-area: h1;
+        font-size: 485%;
+        color: red;
+        text-align: center;
+    }
+    
+    .write1{
+        grid-area: w1;
+    }
+    
+    .write2{
+        grid-area: w2;
+    }
+    .h9{
+        color:blue;
+    }
+    
+
+
+}
+
