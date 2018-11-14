@@ -5,15 +5,26 @@
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
     <link href="css/maps.css" rel="stylesheet">
+    <link href="css/menu2.css" rel="stylesheet">
 
   </head>
   <body>
     <div id="map"></div>
-    <form name="locationChange" onsubmit="return newLocation" meathod="post">
-    Location
-    <input type="text" name="city">
-    <input type="submit" value="Enter">
+    These are the location of the top ten rehab centers in the state of Connecticut. It is safe to assume these are areas
+    where there is a high population of drug abuse.
+    <div class="dropdown">
+                <button onclick="dropdownFunction()" class="navBtn">Navigation</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="index.html">Home</a>
+                    <a href="#">Link 2</a>
+                    <a href="aboutUs.html">About Us</a>
+                </div>
+            </div>
+    <script src="scripts/dropdownScript.js"></script>
     <script src="scripts/maps.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCo24bHkf0BUnD96SlWpZJvL4hJbt3BKmk&libraries=places"></script>
+
+
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCo24bHkf0BUnD96SlWpZJvL4hJbt3BKmk&callback=initMap">
     </script>
