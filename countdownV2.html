@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta chartset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Clean Calendar</title>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="js/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="css/countdown.css">
+<script src="js/countdownV2.js"></script>
+
+</head>
+<body>
+<br>
+
+<!-- create the row for the nav bar -->
+<div class = "row">
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+  <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html" style="color:white">Get Clean Today</a>
+        </div>
+		<div id="navbar" class="navbar-collapse collapse" >
+		<ul class="nav navbar-nav">
+		  <li><a href=".html"  style="color:white">Home</a></li>
+		  <li class="active"><a href="countdownV2.html"  style="color:white">Calendar</a></li>
+		</ul>
+		<ul class="nav navbar-nav navbar-right">
+			<li><a href=".html" style="color:white">Info</a></li>
+		</ul>
+		</div>
+  </div>
+</nav>
+
+</div>
+
+<br>
+<br>
+
+<!-- create the row for the h1 tag -->
+<div class = "row">
+	<div class = "col-xs-12 col-xs-offset-0 col-sm-12 col-sm-offset-0 col-md-12 col-md-offset-0 col-lg-12 col-lg-offset-0">
+		<h1>Needing Reassurance?</h1>
+	</div>
+</div>
+
+<!-- create the row for the panel -->
+<div class = "row">
+<div class = "col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+	<!-- create the panel -->
+	<div class = "panel panel-default panel-pet">
+		<div class = "panel-heading pet-title">
+			<h2 class = "panel-title head">
+				The Clean Calendar
+			</h2>
+		</div>
+		<div class = "panel-body">
+			<div class="container">
+			  <!-- create the form group that will tie the inputs together -->
+				  <form class="form-horizontal">
+					<div class="form-group">
+					  <div class="radio">
+						<label><input type="radio" name="optradio" checked="checked" id = "getClean" onClick = "gClean()">I want to get clean.</label>
+					</div>
+					<div class="radio">
+						<label><input type="radio" name="optradio" id = "stayClean" onClick = "sClean()">I am clean.</label>
+					</div>
+					</div>
+					<div class="form-group col-sm-10">
+						<label id="desc" class="col-xs-4 col-sm-4 col-md-4 col-md-pull-2 col-lg-4 control-label">I will get clean on</label>
+						<select id = "slct1" class = "col-xs-3 col-md-3 col-md-pull-2" name = "slct1">
+							<option id = "jan" value = "January">January</option>
+							<option id = "feb" value = "February">February</option>
+							<option id = "mar" value = "March">March</option>
+							<option id = "apr" value = "April">April</option>
+							<option id = "may" value = "May">May</option>
+							<option id = "jun" value = "June">June</option>
+							<option id = "jul" value = "July">July</option>
+							<option id = "aug" value = "August">August</option>
+							<option id = "sep" value = "September">September</option>
+							<option id = "oct" value = "October">October</option>
+							<option id = "nov" value = "November" selected = "selected">November</option>
+							<option id = "dec" value = "December">December</option>
+						</select>
+						<select id = "slct2" class = "col-xs-2 col-md-1 col-md-pull-2" name = "slct2" onClick = "disableDate('slct1','slct2')">
+							<option id = "1" value = "1">1</option>
+							<option id = "2" value = "2">2</option>
+							<option id = "3" value = "3">3</option>
+							<option id = "4" value = "4">4</option>
+							<option id = "5" value = "5">5</option>
+							<option id = "6" value = "6">6</option>
+							<option id = "7" value = "7">7</option>
+							<option id = "8" value = "8">8</option>
+							<option id = "9" value = "9">9</option>
+							<option id = "10" value = "10">10</option>
+							<option id = "11" value = "11">11</option>
+							<option id = "12" value = "12">12</option>
+							<option id = "13" value = "13">13</option>
+							<option id = "14" value = "14">14</option>
+							<option id = "15" value = "15" selected = "selected">15</option>
+							<option id = "16" value = "16">16</option>
+							<option id = "17" value = "17">17</option>
+							<option id = "18" value = "18">18</option>
+							<option id = "19" value = "19">19</option>
+							<option id = "20" value = "20">20</option>
+							<option id = "21" value = "21">21</option>
+							<option id = "22" value = "22">22</option>
+							<option id = "23" value = "23">23</option>
+							<option id = "24" value = "24">24</option>
+							<option id = "25" value = "25">25</option>
+							<option id = "26" value = "26">26</option>
+							<option id = "27" value = "27">27</option>
+							<option id = "28" value = "28">28</option>
+							<option id = "29" value = "29">29</option>
+							<option id = "30" value = "30">30</option>
+							<option id = "31" value = "31">31</option>
+							
+						</select>
+						<select id = "slct3" class = "col-xs-2 col-md-2 col-md-pull-2" name = "slct3">
+							<option id = "2008" value = "2008">2008</option>
+							<option id = "2009" value = "2009">2009</option>
+							<option id = "2010" value = "2010">2010</option>
+							<option id = "2011" value = "2011">2011</option>
+							<option id = "2012" value = "2012">2012</option>
+							<option id = "2013" value = "2013">2013</option>
+							<option id = "2014" value = "2014">2015</option>
+							<option id = "2015" value = "2015">2015</option>
+							<option id = "2016" value = "2016">2016</option>
+							<option id = "2017" value = "2017">2017</option>
+							<option id = "2018" value = "2018" selected = "selected">2018</option>
+							<option id = "2019" value = "2019">2019</option>
+							<option id = "2020" value = "2020">2020</option>
+							<option id = "2021" value = "2021">2021</option>
+							<option id = "2022" value = "2022">2022</option>
+							<option id = "2023" value = "2023">2023</option>
+							<option id = "2024" value = "2024">2024</option>
+							<option id = "2025" value = "2025">2025</option>
+							<option id = "2026" value = "2026">2026</option>
+							<option id = "2027" value = "2027">2027</option>
+							<option id = "2028" value = "2028">2028</option>
+						</select>
+					</div>
+					<!-- create the submit and reset buttons for the whole form group -->
+					<div class="form-group col-xs-12 col-xs-offset-0 col-sm-12 col-sm-offset-0 col-md-12 col-md-offset-0 col-lg-12 col-lg-offset-0">
+						<div class="col-xs-2 col-md-1">
+							<button id = "sub" type="submit" class="btn btn-success" onClick = "timer('slct1','slct2','slct3')">Submit</button>
+						</div>
+						<div class="col-xs-2 col-xs-push-2 col-sm-2 col-sm-push-1 col-md-1 col-md-pull-10 col-lg-1 col-lg-pull-5">
+							<button type="reset" class="btn btn-danger" onClick = "res()">Reset</button>
+						</div>
+					</div>
+				  </form>
+				  <!-- create the p tag for the timer to display and update -->
+				  <div class = "col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+					<p id = "demo"></p>
+				  </div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+
+
+
+</body>
+</html>
