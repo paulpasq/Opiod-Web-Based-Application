@@ -1,28 +1,8 @@
 body
 {
-  background-color: rgba(39, 128, 231, 0.8);
+  background-color: rgb(148, 179, 252);
 }
 
-a
-{
-	color:#AF3131;
-	font-size:6vw;
-	text-decoration:none;
-}
-
-a.header
-{
-	color:#AF3131;
-	font-size:8vw;
-}
-
-
-.select:hover
-{
-	opacity:0.65;
-	text-decoration:underline;
-	transform: scale(1.1);
-}
 
 h1
 {
@@ -86,9 +66,9 @@ p
 
 .navbar {
     overflow: hidden;
-    background-color: #AF3131;
+    background-color: rgb(250, 101, 2);
     font-family: Arial, Helvetica, sans-serif;
-	border-left:40px solid #AF3131;
+	border-left:40px solid rgb(250, 101, 2);;
 }
 
 .navbar a {
