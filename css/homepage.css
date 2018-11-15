@@ -45,6 +45,7 @@
 
 .pic2{
     grid-area: p2;
+    justify-content: right;
 }
 
 .write3{
