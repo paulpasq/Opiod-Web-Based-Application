@@ -1,6 +1,2 @@
-# opiodSite
-This was a website that a group of 2 other students and I created for a compition we competed in for MCC. One other student and I were the
-only ones to make anything for it due to the fact that we had to teach ourselves HTML, Javascript, and CSS. I also tried to impliment 
-a RESTful API from google maps but was unable to get the second part of that page working properly. I was told to use a second API key 
-to fix the issue at the compition and have not gotten around to trying to fix the issue. I will probably not be going and revisiting this
-project. My pages are the map, index, and about us page.
+# Opiod Web Based Application
+Tasked with creating an application that provided useful information to families and addicts in an integrated form, the result is a website that a team of two other students, from Manchester Community College, and I created to give our take on a web based application. The pages I created were countdownV2.html, info.htlm and the corresponding JavaScript and CSS files. Ultimately, we were never taught much of HTML, CSS, or JavaScript at MCC so we had to teach ourselves much of the languages but we gave our best shot at an integrated web based application.
